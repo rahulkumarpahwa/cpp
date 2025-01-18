@@ -2,7 +2,7 @@
 using namespace std;
 
 int main()
-{
+{ // Primitive Datatypes
     int in = 10;
     char ch = 'A';
     float f = 10.99f; // f should be written to tell that it is float.
