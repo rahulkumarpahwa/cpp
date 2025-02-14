@@ -1,7 +1,7 @@
 // dynamic initialisation of objects
 
 // constructor will dynamically initialised in this lecture.
-//
+// first user will provide its input, then provide will run and the object is initialised based upon the values entered by the user of different datatype or count of the parameters.
 
 #include <iostream>
 using namespace std;
@@ -14,7 +14,7 @@ class BankDeposit
     float returnValue;
 
 public:
-    BankDeposit() {} // when we didn't pass any argument the still the oject can be created with this one. without it bd3 can't be made.
+    BankDeposit() {}                    // when we didn't pass any argument the still the oject can be created with this one. without it bd3 can't be made.
     BankDeposit(int p, int y, float r); // r can be value like 0.04 ie. in percentage with decimal.
     BankDeposit(int p, int y, int r);   // r can be value like 4 ie. in percentage simply.
     void show();

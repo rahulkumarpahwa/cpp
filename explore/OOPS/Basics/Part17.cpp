@@ -8,7 +8,7 @@ class Number
     int a;
 
 public:
-    Number() {} // default constructor must be made when a parameterised constructor is made always.
+    Number() {} // default constructor must be made when a parameterized constructor is made always.
     Number(int num)
     {
         a = num;
