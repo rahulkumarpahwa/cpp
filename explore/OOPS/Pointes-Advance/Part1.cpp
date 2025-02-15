@@ -1,4 +1,4 @@
-//
+//pointers basics
 #include <iostream>
 using namespace std;
 
