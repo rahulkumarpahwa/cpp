@@ -1,4 +1,4 @@
-// Initialization list in Constructors
+// Initialization list in Constructors : It is way of giving value to class data members in the constructor.
 
 #include <iostream>
 using namespace std;
