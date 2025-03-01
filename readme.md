@@ -5,7 +5,7 @@
 
 # topics covered :
 
-## Assignments:
+# Assignments:
 
 # Assignment 1:
 
