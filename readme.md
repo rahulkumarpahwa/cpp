@@ -4,6 +4,5 @@
 
 
 # topics covered : 
-1. Basic Programs: 
-    - Program to calculate area and circumference of a circle.
+
     - 
