@@ -1,0 +1,1 @@
+g++ main.cpp hangman_functions.cpp -o hangman
