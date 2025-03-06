@@ -1,21 +1,34 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 #include "hangman_functions.h"
 using namespace std;
 
 int main()
 {
-    greet();
+    // Seed the random number generator
+    srand(time(0));
 
-    string codeword = "codingwithcpp";
-    string answer(codeword.length(), '_'); // Initialize answer with underscores based on the length of codeword
-    int misses = 0;                        // initially zero
+    // List of programming languages
+    string words[] = {"python", "java", "javascript", "ruby", "swift", "kotlin", "typescript", "go", "rust", "php", "perl", "haskell", "scala", "elixir", "clojure", "dart", "objectivec", "cplusplus", "csharp", "r"};
+
+    // Randomly select a word from the list
+    string codeword = words[rand() % 20];
+    string category = "Programming Languages";
+    int word_length = codeword.length();
+    int max_tries = 7;
+
+    greet(category, word_length, max_tries);
+
+    string answer(word_length, '_'); // Initialize answer with underscores based on the length of codeword
+    int misses = 0;                  // initially zero
 
     vector<char> incorrect;
     bool guess = false;
     char letter;
 
-    while (answer != codeword && misses < 7)
+    while (answer != codeword && misses < max_tries)
     {
         display_misses(misses);
         display_status(incorrect, answer);

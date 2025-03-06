@@ -6,12 +6,16 @@
 using namespace std;
 
 // define functions
-void greet()
+void greet(string category, int word_length, int max_tries)
 {
     cout << "------------------\n";
     cout << "Hangman : The Game\n";
     cout << "------------------\n";
-    cout << " Instructions : Save your friend from being hanged by guessing the letters in the codeword. \n";
+    cout << "Category: " << category << "\n";
+    cout << "Word Length: " << word_length << "\n";
+    cout << "Number of Tries: " << max_tries << "\n";
+    cout << "------------------\n";
+    cout << "Instructions: Save your friend from being hanged by guessing the letters in the codeword.\n";
     cout << "------------------\n";
 }
 
